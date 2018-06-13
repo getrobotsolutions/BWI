@@ -16,10 +16,7 @@ function LanguageChange(lang)
         document.getElementById("btn_spanish").style.backgroundColor = "#FF6600";
         document.getElementById("btn_spanish").style.color = "#ffffff";
 
-        document.getElementById("txt_eat").innerHTML = "Restaurants";
-        document.getElementById("txt_shopping").innerHTML = "Shopping";
-        document.getElementById("txt_take_selfie").innerHTML = "Take Selfie";
-        document.getElementById("txt_robot_avatar").innerHTML = "Robot Avatar";
+        
         // document.getElementById("vote-title").innerHTML = "Vote for who will win?";
 
         speak[0] = "Enjoy your time at some of our great restaurants.";
@@ -39,10 +36,7 @@ function LanguageChange(lang)
         document.getElementById("btn_spanish").style.backgroundColor = "#ffffff";
         document.getElementById("btn_spanish").style.color = "#FF6600";
 
-        document.getElementById("txt_eat").innerHTML = "Restaurante";
-        document.getElementById("txt_shopping").innerHTML = "Compras";
-        document.getElementById("txt_take_selfie").innerHTML = "Tomar Selfie";
-        document.getElementById("txt_robot_avatar").innerHTML = "Robot Avatar";
+        
         // document.getElementById("vote-title").innerHTML = "Vote por quién ganará?";
 
 

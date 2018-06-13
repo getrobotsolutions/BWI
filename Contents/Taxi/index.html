@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script> 
+    
+
+  <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+  <link href="css/taxi.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+
+<body >
+
+<header >
+    <div class="logo">
+        <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
+    </div>
+    <span class="col-sm-3 date-time" style="text-align: left; color: #3c3c3c">
+        
+          <div id="content_air"></div>
+          <div id="content_date" ></div>
+          <span id="condition"></span>
+        <div>
+            <img id ="image-zoom" style="width: 50px" src="">
+             <span id="temp" ></span>
+        </div>
+       
+    </span>
+</header>
+
+<nav>
+    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" >Home</span>
+    <h2 class="lang-text">Choose a Language</h2>
+    <div class="nav-language">
+        <button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
+        <button onclick="LanguageChange('spanish');" id="btn_spanish" class="btn-spanish">Español</button>
+    </div>
+</nav>
+
+<section class="main-content">
+  <div class="bmg">
+    <div class="wrap" >
+      <div class="col-sm-5 part1">
+        <div class="col-sm-6">
+          <h2 id="transit">Transit</h2>
+          <h2 id="shuttles">Shuttles</h2>
+          <h2 id="app-based-ride">App-Based Ride Services</h2>
+          
+        </div>
+        <div class="col-sm-6">
+          <h2 id="rental-cars">Rental Cars</h2>
+          <h2 id="taxis">Taxis and Rideshares</h2>
+          <h2 id="commercial-perators">Commercial Operators</h2>
+        </div>
+
+      </div>
+      <div class="col-sm-6 part2">
+        <div class="transit" style="display: none;">
+          <h1>Transit</h1>
+          <h2></h2>
+          <p>Coming Soon</p>
+        </div>
+
+        <div class="rental-cars" style="display: none;">
+          <h1>Rental Cars</h1>
+          <p>BWI Marshall Airport has opened a spacious, rental car facility providing a one-stop rental car station for our customers. The facility is located at Stoney Run Road and New Ridge Road. Free shuttle service carries customers to and from the airport approximately every ten minutes. Passengers arriving on flights should take the free shuttle from the lower level terminal for a ten-minute ride to the new facility. When returning a vehicle, look for highway directional signs to the facility. The Car Rental Facility is located at: 7432 New Ridge Rd. Hanover, MD 21076.
+          </p>
+          <table border="1" cellspacing="0" cellpadding="0" width="0">
+  <tbody>
+    <tr>
+      <td>Company</td>
+      <td>Phone number</td>
+      <td width="163" valign="top">Website</td>
+    </tr>
+
+    <tr>
+      <td >Avis</td>
+      <td >410-859-1680</td>
+      <td > www.avis.com</td>
+    </tr>
+    <tr>
+      <td>Alamo</td>
+      <td>410-859-8092 </td>
+      <td>www.alamo.com</td>
+    </tr>
+    <tr>
+      <td>Budget</td>
+      <td width="133" valign="top">410-691-2913</td>
+      <td width="163" valign="top">www.budget</td>
+    </tr>
+    <tr>
+      <td >Dollar</td>
+      <td width="133" valign="top">410-850-7112</td>
+      <td width="163" valign="top">www.dollar.com</td>
+    </tr>
+    <tr>
+      <td >Enterprise</td>
+      <td width="133" valign="top">800-325-8007</td>
+      <td width="163" valign="top">www.enterprise.com</td>
+    </tr>
+    <tr>
+      <td >Hertz</td>
+      <td width="133" valign="top">410-850-7400</td>
+      <td width="163" valign="top">www.hertz.com</td>
+    </tr>
+    <tr>
+      <td>National</td>
+      <td width="133" valign="top">410-859-8092</td>
+      <td width="163" valign="top">www.nationalcar.com</td>
+    </tr>
+    <tr>
+      <td>Next Car</td>
+      <td>410-461-1500</td>
+      <td width="163" valign="top">www.nextcarrental.com</td>
+    </tr>
+    <tr>
+      <td>Payless</td>
+      <td>410-859-1800</td>
+      <td width="163" valign="top">www.paylesscar.com</td>
+    </tr>
+    <tr>
+      <td>Thrifty</td>
+      <td>410-850-7112</td>
+      <td width="163" valign="top">www.thrifty.com</td>
+    </tr>
+  </tbody>
+</table>
+
+        </div>
+
+        <div class="shuttles" style="display: none;">
+          <h1>Shuttles</h1>
+          
+          <p>In order to manage vehicle traffic on the terminal roadway, BWI Marshall Airport has created specific pick-up zones for hotel shuttles and off-airport parking shuttles. Hotel and off-airport parking shuttles will pick up passengers at the designated zones only. Private vehicles are restricted from these off-airport pick-up zones. Zones 1 and 3 are assigned for hotel shuttles. Zone 2 is designated for off-airport parking shuttles. Zone 4 will be used by both hotels and off-airport parking companies.</p>
+        </div>
+
+        <div class="taxis" style="display: none;">
+          <h1>Taxis and Rideshares</h1>
+          
+          <p>The taxi stands are located just outside of the baggage claim area on the Lower Level of the BWI Marshall Airport terminal near doors 5 and 13. Please note that this service is available from BWI Marshall Airport only. For cab service to BWI Marshall Airport, please consult your local cab company. BWI Marshall Airport taxicabs are prohibited from charging flat rates. For more information, call 410-859-1100 or visit www.bwiairporttaxi.com</p>
+        </div>
+
+        <div class="app-based-ride" style="display: none;">
+          <h1>App-Based Ride Services</h1>
+          
+          <p>App-based ride services provide prearranged transportation between BWI Marshall Airport and passenger-specified locations. Passengers arrange service online, typically using a smartphone app. Drivers use their personal, non-commercial vehicles to transport passengers.App-based ride services pick up and drop off passengers at the terminal curbs on the Departures/Ticketing Level between doors 9 and 11.Fare and travel time ranges vary. Customers should contact the company for details.</p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<footer>
+
+   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+          <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+          <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
+          <!--<li data-target="#myCarousel" data-slide-to="4"></li>-->
+          <!--<li data-target="#myCarousel" data-slide-to="5"></li> -->
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner " id="slide" role="listbox">
+
+          <div class="item active">
+            <img class="fixed-height" src="../../images/slider/1.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="item ">
+            <img class="fixed-height" src="../../images/slider/2.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="item ">
+            <img class="fixed-height" src="../../images/slider/3.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+          
+       
+
+        </div>   
+    </div>
+
+    <img src="../../assets/bottom-line.png" onclick="ShowPopupARS('images/contact.png')">
+</footer>
+<div id="dialog-overlay"></div>
+      <div id="dialog-box">
+
+      </div>
+
+</body>
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+</script>
+
+<script language="JavaScript" type="text/javascript" src="js/taxi.js"></script>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+
+<script language="javascript" type="text/javascript">
+    window.history.forward();
+</script>
+
+
+
+</html>

@@ -24,7 +24,7 @@ body {
 
 
 .main{
-	background-color: #dba41b;
+	background-color: white;
     min-height: 1150px;
 	padding-top: 40px;}
 
@@ -112,15 +112,15 @@ footer {
 	bottom: 372px !important;
 }
 .title{
-	background-color: #dba41b;
+	background-color: white;
     padding: 20px 0;
     text-align: center;
     margin: 0;
-    color: white;
+    color: black;
 }
 #change-us, #change-ar{text-decoration: none;}
 .deltext{
-	    color: white;
+	    color: black;
     position: absolute;
     top: 700px;
     left: 350px;

@@ -3,7 +3,7 @@
 //-----------------------------------------------------
 
 function redirect(){
-    window.location.href = "../../main.htm";
+    window.location.href = "../../maincontents.htm";
 }
 var initial=setTimeout(redirect,60000);
 
@@ -38,13 +38,13 @@ function LanguageChange(lang)
 
 var Shop_en = new Array ( );
 
-Shop_en[1] = new Array ( "Brookstone","Homes need love, too. That’s why there’s Brookstone, a bottomless collection of fun and interactive products for the abode. Nice to look at and rooted in purpose, it’s okay to touch the merchandise here.", "images/1.png", "images/offers/Brookstone/Brookstone-1.png" );
-Shop_en[0] = new Array ( "InMotion Entertainment","InMotion Entertainment is the largest entertainment and electronics airport retailer in the U.S. With a unique blend of cutting-edge electronics, accessories, music, movies and rental services, we guarantee to make your next trip more enjoyable. InMotion: Just press play.", "images/2.png", "images/offers/InMotion/InMotion-1.png" );
-Shop_en[2] = new Array ( "Marcy's Travel Center","Maximize your travel time by visiting the Marcy’s Travel Center, fully equipped with Internet access, copier and mail service. Luggage solutions, including suitcases and tags, make Marcy’s the best travel companion.", "images/3.png");
+Shop_en[0] = new Array ( "Hudson News","News, magazines, snacks, books and travel convenience items, plus a great selection of souvenirs. </br>HOURS: DAILY 7 A.M. - 10 P.M. </br>PHONE: 410-850-4720 ", "images/Hudson-News.jpg", "images/offers/Brookstone/Brookstone-1.png" );
+Shop_en[1] = new Array ( "Best Buy Express by Zoom Systems","These convenient kiosks feature the latest in electronics and technology, making it easy to replace headphones, chargers, and the like before a big trip.", "images/home_slider_best_buy_0.png", "images/offers/InMotion/InMotion-1.png" );
+/*Shop_en[2] = new Array ( "Marcy's Travel Center","Maximize your travel time by visiting the Marcy’s Travel Center, fully equipped with Internet access, copier and mail service. Luggage solutions, including suitcases and tags, make Marcy’s the best travel companion.", "images/3.png");
 Shop_en[3] = new Array ( "Simply Books","Fewer things compare to a perfectly selected book and cup of coffee. Both can be found at Simply Books, which features Starbucks and the best-sellers. The only airport-based bookstore in the continental U.S. that can make that claim.", "images/5.png");
 Shop_en[4] = new Array ( "Stars of San Antonio","Stock up for the one who’s deep in your heart. Texas-themed jewelry, shirts and sauces abound at this shop that offers 10% for every $100 purchase.", "images/6.png", "images/offers/Stars of San Antonio/Stars of San Antonio-1.png" );
 Shop_en[5] = new Array ( "UETA Duty Free","UETA Duty Free offers top quality spirits and tobaccos for international travelers, and brand name fragrances, cosmetics and luxury gifts for all. High-end merchandise at dramatically low prices will impress the most discriminating shopper…and a discount aisle offers another 25% off.", "images/8.png");
-
+*/
 
 var Shop_sp = new Array ( );
 
@@ -59,7 +59,7 @@ Shop_sp[5] = new Array ( "UETA Duty Free","UETA Duty Free ofrece licores y tabac
 
 
 
-if(readCookie("CurrentLanguage") === "English")
+/*if(readCookie("CurrentLanguage") === "English")
 {
   var Hotel = new Array ( );
    Hotel = Shop_en ;
@@ -70,7 +70,7 @@ if(readCookie("CurrentLanguage") === "English")
    Hotel = Shop_sp ;
     document.getElementById("HotelDesc").innerHTML = "";
 }
-
+*/
 
    
 Hotel = Shop_en ;

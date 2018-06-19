@@ -3,7 +3,7 @@
 //-----------------------------------------------------
 
 function redirect(){
-    window.location.href = "../../main.htm";
+    window.location.href = "../../maincontents.htm";
 }
 var initial=setTimeout(redirect,60000);
 
@@ -40,9 +40,13 @@ location.reload();
 
 
 var Hotel_en = new Array ( );
-Hotel_en[0] = new Array ( "Auntie Anne's/Cinnabon","The fresh, gooey taste of a Cinnabon cinnamon roll accompanied with a deliciously perfected Auntie Anne’s pretzel offers SAT passengers a sweet treat on the go.", "images/2.png" , "images/offers/Auntie_Anne/1.png");
-Hotel_en[1] = new Array ( "Dunkin' Donuts","More than 2.7 million Americans a day can’t be wrong! Offering more than just donuts, the No. 1 U.S. retailer of coffee has been keeping America running since 1950. Let Dunkin’ Donuts give you that kick to your destination.", "images/5.png");
-Hotel_en[2] = new Array ( "Famous Famiglia Pizzeria","It’s the pizza New Yorkers vote No. 1 and the offcial pie of the New York Yankees and Madison Square Garden.  Famous famiglia offers traditional Italian at its best, including pizza, strombolis, garlic knots, salads, and pastas! Buon appetito!", "images/6.png", "images/offers/famiglia coupon/famiglia coupon-1.jpg");
+Hotel_en[0] = new Array ( "Starbucks","The place where you can find the world's best coffees. Since 1971 Starbucks has been committed to roasting the highest quality Arabica coffee on the planet.</br> HOURS: SUNDAY – FRIDAY 5:00 A.M. - 10:00 P.M., SATURDAY 5:00 A.M. – 9:30 P.M. </br>PHONE: 410-691-2359", "images/Starbucks.png", "images/offers/Starbucks/Starbucks-1.png" );
+
+
+Hotel_en[1] = new Array ( "Green Beans Coffee","Our cafes offer a casual and comfortable place where our customers can enjoy premium coffee beverages and fresh-baked treats. </br>HOURS: SUNDAY – FRIDAY 5:00 A.M. - 10:00 P.M., SATURDAY 5:00 A.M. – 9:30 P.M. </br>PHONE: 410-553-4937", "images/5.png");
+
+Hotel_en[2] = new Array ( "Euro Cafe","Euro Café roasts and distributes high-quality coffee to Hudson Group, Euro Market, and other gourmet coffee houses and mini-markets around the country. Euro Café also sells freshly roasted coffee direct to the customer. </br>HOURS: Monday - Friday 4:30AM - 11:00PM </br> Phone: (410) 684-3983", "images/2.png" , "images/offers/Auntie_Anne/1.png");
+/*Hotel_en[2] = new Array ( "Famous Famiglia Pizzeria","It’s the pizza New Yorkers vote No. 1 and the offcial pie of the New York Yankees and Madison Square Garden.  Famous famiglia offers traditional Italian at its best, including pizza, strombolis, garlic knots, salads, and pastas! Buon appetito!", "images/6.png", "images/offers/famiglia coupon/famiglia coupon-1.jpg");
 Hotel_en[3] = new Array ( "Fruteria","From fruit-infused cocktails to Mexican tapas, Fruteria offers a variety of items while providing the experience of Mexico’s beautiful and colorful fruit stands.", "images/7.png", "images/offers/La Fruteria/La Fruteria-1.png" );
 Hotel_en[4] = new Array ( "Good Fellows","", "images/Good Fellows.jpeg");
 Hotel_en[5] = new Array ( "Gervin's","Traveling got you stressed? Chill at Gervin’s Sports Bar. Featuring memorabilia from George “Ice Man” Gervin, catch up on the Spurs while savoring Base Line nachos, the Slam Dunk turkey sandwich or the Nothing But Net club sandwich. Game on!", "images/9.png");
@@ -53,9 +57,7 @@ Hotel_en[9] = new Array ( "Natalie's Candy Jar","Giant lollipops mark the spot t
 Hotel_en[10] = new Array ( "Raising Cane's Chicken Fingers","We only have one love: chicken fingers. Add Texas Toast, our specialty sauce and crinkle cut fries and you have a made-to-order meal to cluck about..", "images/14.png", "images/offers/Raising Cane's/Raising Cane's-1.png" );
 Hotel_en[11] = new Array ( "SA Express News","", "images/Stars of San Antonio.jpeg");
 Hotel_en[12] = new Array ( "Steak 'n Shake","Proudly serving America’s best, freshest, and tastiest burgers and shakes for more than 75 years. Add a side of fries and you’ll surely satisfy your hunger.", "images/19.png", "images/offers/Steak n' Shake/Steak n' Shake-1.png" );
-Hotel_en[13] = new Array ( "Vino Volo","Boutique retail meets lounging in style at Vino Volo, where great wines from across the globe are sold to travelers by glass or by bottle, en route or pre-flight. Travel the world, glass by glass!", "images/20.png", "images/offers/Vino Volo/Vino Volo-1.png" );
-Hotel_en[14] = new Array ( "Starbucks","Handcrafted beverages and a name you can trust – it doesn’t get any cozier than that. Curl up with a favorite brew or Tazo tea creation today … and don’t forget the biscotti..", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
-
+*/
 var Hotel_sp = new Array ( );
 
 Hotel_sp[0] = new Array ( "Auntie Anne's/Cinnabon","El sabor fresco y pegajoso de un rollo de canela Cinnabon acompañado con un pretzel de la Auntie Anne deliciosamente perfeccionado ofrece a los pasajeros del SAT un dulce regalo en el camino.", "images/2.png", "images/offers/Auntie_Anne/1.png" );
@@ -75,7 +77,7 @@ Hotel_sp[13] = new Array ( "Vino Volo","Boutique minor se encuentra con estilo e
 Hotel_sp[14] = new Array ( "Starbucks","Bebidas artesanales y un nombre en el que puede confiar: no hay nada más acogedor que eso. Acurrúcate con una bebida favorita o una creación de té Tazo hoy ... y no te olvides de los biscotti.", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
 
 Hotel = Hotel_en ;
-if(readCookie("CurrentLanguage") === "English")
+/*if(readCookie("CurrentLanguage") === "English")
 {
   var Hotel = new Array ( );
    Hotel = Hotel_en ;
@@ -83,7 +85,7 @@ if(readCookie("CurrentLanguage") === "English")
 {
    var Hotel = new Array ( );
    Hotel = Hotel_sp ;
-}
+}*/
 
 
    

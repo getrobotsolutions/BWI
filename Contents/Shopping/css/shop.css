@@ -10,7 +10,7 @@
   .wrap{padding-top: 90px;}
   .part1{ height: 660px;margin-top: -22px;margin-left: -15px;}
   .part2{
-         background-color: #FF6600 ;
+         background-color: #e03d40 ;
       height: auto;
       width: 616px;
       margin-top: -20px;
@@ -45,10 +45,10 @@
         font-size: 40px;
         font-weight: 600;
         padding:30px 45px;
-        border-top:1px solid #FF6600 ;
-        border-bottom:1px solid #FF6600 ;
+        border-top:1px solid #e03d40 ;
+        border-bottom:1px solid #e03d40 ;
         cursor:pointer;
-        background-color:#FF6600   ;
+        background-color:#e03d40   ;
         color:#ffffff;
         text-align:left;
     }

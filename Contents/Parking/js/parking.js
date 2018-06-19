@@ -3,7 +3,7 @@
 //-----------------------------------------------------
 
 function redirect(){
-    //window.location.href = "../../maincontents.htm";
+    window.location.href = "../../maincontents.htm";
 }
 var initial=setTimeout(redirect,60000);
 

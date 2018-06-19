@@ -19,16 +19,21 @@ function LanguageChange(lang)
         
         // document.getElementById("vote-title").innerHTML = "Vote for who will win?";
 
-        speak[0] = "Enjoy your time at some of our great restaurants.";
-        speak[1] = "Spend some time at some of our shops.";
-        speak[2] = "Please touch the camera icon below and Say Cheese!";
-        speak[3] = "Smile you are about to become a robot.";
-
+        speak[0] = "Find out about some of our great parking options.";
+        speak[1] = "Find your way around the terminal.";
+        speak[2] = "Here are some ways to get you where you want to go!";
+        speak[3] = "Enjoy some food at our restaurants.";
+        speak[4] = "Take some time to shop at our great stores.";
+        speak[5] = "Find out more features our airport offers.";
+        speak[6] = "Press the button on my screen and strike a pose!";
+        speak[7] = "Say Cheese! You are about to become a robot.";
+        speak[8] = "Pick a song and let’s boogie!";
+        
 
     }
     else if (lang === "spanish")
     {
-        window.external.ChangeLanguage("es-us");
+        /*window.external.ChangeLanguage("es-us");
         eraseCookie("CurrentLanguage");
         writeCookie("CurrentLanguage", "Spanish", 30);
         document.getElementById("btn_english").style.backgroundColor = "#FF6600";
@@ -43,7 +48,7 @@ function LanguageChange(lang)
         speak[0] = "Disfruta de tu tiempo en algunos de nuestros excelentes restaurantes.";
         speak[1] = "Pase tiempo en algunas de nuestras tiendas.";
         speak[2] = "Toca el icono de la cámara a continuación y ¡Di queso!";
-        speak[3] = "Sonríe, estás a punto de convertirte en un robot.";
+        speak[3] = "Sonríe, estás a punto de convertirte en un robot.";*/
     }
 
 }
@@ -51,43 +56,48 @@ function LanguageChange(lang)
 function FC_ContentsCall(strContentsName, strLanguage)
 {
    // alert(strContentsName);
-  
+    
+   
     switch (strContentsName)
     {
         case "Home":
            location.href = "../../maincontents.htm";
             break;
-        case "Taxi":
-            location.href = "Contents/Taxi/index.html";
-            break;
-        case "Maps":
-            location.href = "Contents/Maps/index.html";
-            break;
         case "Parking":
+            PlaySpeech(speak[0]);
             location.href = "Contents/Parking/index.html";
             break;
-        
+        case "Maps":
+            PlaySpeech(speak[1]);
+            location.href = "Contents/Maps/index.html";
+            break;
+        case "Taxi":
+            PlaySpeech(speak[2]);
+            location.href = "Contents/Taxi/index.html";
+            break;
         case "Eat":
-            //PlaySpeech(speak[0]);
+            PlaySpeech(speak[3]);
             location.href = "Contents/Eat/index.html";
             break;
         case "Shopping":
-           // PlaySpeech(speak[1]);
+            PlaySpeech(speak[4]);
             location.href = "Contents/Shopping/index.html";
             break;
         case "Info":
+            PlaySpeech(speak[5]);
             location.href = "Contents/Info/index.html";
             break;
 
         case "Selfie":
-           // PlaySpeech(speak[2]);
+            PlaySpeech(speak[6]);
             location.href = "Contents/Selfie/index.html";
             break;
         case "Avatar":
-           // PlaySpeech(speak[3]);
+            PlaySpeech(speak[7]);
             location.href = "Contents/RobotAvatar/index.htm";
             break;
         case "Dance":
+            PlaySpeech(speak[9]);
             location.href = "Contents/Dance/index.html";
             break;
         case "Config":
@@ -147,7 +157,7 @@ function voteInit() {
 
 function OnUserApproached()
 {
-    PlaySpeech("Hi, I'm Erin, thanks for traveling with us.  To get started, please press a button below.");
+    PlaySpeech("Hello, welcome to the BWl Airport. Please press a button on my screen to begin.");
 }
 
 
@@ -181,7 +191,7 @@ setTimeout(function () {
     ShowTime();
     console.log("Time Showed");
 
-    var city = "San Antonio";
+    var city = "Baltimore";
     var searchtext = "select item.condition from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='f'";
     var queryURL = "https://query.yahooapis.com/v1/public/yql?q="+ searchtext + "&format=json";
 

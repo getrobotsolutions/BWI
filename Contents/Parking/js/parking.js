@@ -45,23 +45,27 @@ location.reload();
 $(document).ready(function(){
   $('#hourly-garage').click(function(){
     $('.hourly-garage').show();
-    $('.valet,.express-parking,.daily-garage,.long-term-parking').hide();
+    $('.valet,.express-parking,.daily-garage,.long-term-parking,.cell-phone-lot').hide();
   });
   $('#valet').click(function(){
     $('.valet').show();
-    $('.hourly-garage,.express-parking,.daily-garage,.long-term-parking').hide();
+    $('.hourly-garage,.express-parking,.daily-garage,.long-term-parking,.cell-phone-lot').hide();
   });
   $('#express-parking').click(function(){
     $('.express-parking').show();
-    $('.hourly-garage,.valet,.daily-garage,.long-term-parking').hide();
+    $('.hourly-garage,.valet,.daily-garage,.long-term-parking,.cell-phone-lot').hide();
   });
   $('#daily-garage').click(function(){
     $('.daily-garage').show();
-    $('.hourly-garage,.valet,.express-parking,.long-term-parking').hide();
+    $('.hourly-garage,.valet,.express-parking,.long-term-parking,.cell-phone-lot').hide();
   });
   $('#long-term-parking').click(function(){
     $('.long-term-parking').show();
-    $('.hourly-garage,.valet,.express-parking,.daily-garage ').hide();
+    $('.hourly-garage,.valet,.express-parking,.daily-garage,.cell-phone-lot ').hide();
+  });
+  $('#cell-phone-lot').click(function(){
+    $('.cell-phone-lot').show();
+    $('.hourly-garage,.valet,.express-parking,.daily-garage,.long-term-parking ').hide();
   });
   
 

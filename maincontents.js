@@ -52,7 +52,15 @@ function LanguageChange(lang)
     }
 
 }
-
+speak[0] = "Find out about some of our great parking options.";
+        speak[1] = "Find your way around the terminal.";
+        speak[2] = "Here are some ways to get you where you want to go!";
+        speak[3] = "Enjoy some food at our restaurants.";
+        speak[4] = "Take some time to shop at our great stores.";
+        speak[5] = "Find out more features our airport offers.";
+        speak[6] = "Press the button on my screen and strike a pose!";
+        speak[7] = "Say Cheese! You are about to become a robot.";
+        speak[8] = "Pick a song and let’s boogie!";
 function FC_ContentsCall(strContentsName, strLanguage)
 {
    // alert(strContentsName);

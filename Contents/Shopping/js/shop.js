@@ -38,7 +38,7 @@ function LanguageChange(lang)
 
 var Shop_en = new Array ( );
 
-Shop_en[0] = new Array ( "Hudson News","News, magazines, snacks, books and travel convenience items, plus a great selection of souvenirs. </br>HOURS: DAILY 7 A.M. - 10 P.M. </br>PHONE: 410-850-4720 ", "images/Hudson-News.jpg", "images/offers/Brookstone/Brookstone-1.png" );
+Shop_en[0] = new Array ( "Hudson News","News, magazines, snacks, books and travel convenience items, plus a great selection of souvenirs. </br>HOURS: DAILY 7 A.M. - 10 P.M. </br>PHONE: 410-850-4720 ", "images/Hudson-News.png", "images/offers/Brookstone/Brookstone-1.png" );
 Shop_en[1] = new Array ( "Best Buy Express by Zoom Systems","These convenient kiosks feature the latest in electronics and technology, making it easy to replace headphones, chargers, and the like before a big trip.", "images/home_slider_best_buy_0.png", "images/offers/InMotion/InMotion-1.png" );
 /*Shop_en[2] = new Array ( "Marcy's Travel Center","Maximize your travel time by visiting the Marcy’s Travel Center, fully equipped with Internet access, copier and mail service. Luggage solutions, including suitcases and tags, make Marcy’s the best travel companion.", "images/3.png");
 Shop_en[3] = new Array ( "Simply Books","Fewer things compare to a perfectly selected book and cup of coffee. Both can be found at Simply Books, which features Starbucks and the best-sellers. The only airport-based bookstore in the continental U.S. that can make that claim.", "images/5.png");
@@ -144,7 +144,7 @@ for (var i = 0; i< Hotel.length; i++) {
               
 
 
-     document.getElementById("mapBtn").style.visibility = "visible";
+     /*document.getElementById("mapBtn").style.visibility = "visible";*/
 
             });
 

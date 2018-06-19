@@ -152,7 +152,7 @@ for (var i = 0; i< Hotel.length; i++) {
 
               var HotelName = $(this).text()    
               getHodetlDetails(HotelName);
-              document.getElementById("mapBtn").style.visibility = "visible";
+              /*document.getElementById("mapBtn").style.visibility = "visible";*/
               
             });
 

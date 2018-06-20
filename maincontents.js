@@ -27,7 +27,7 @@ function LanguageChange(lang)
         speak[5] = "Find out more features our airport offers.";
         speak[6] = "Press the button on my screen and strike a pose!";
         speak[7] = "Say Cheese! You are about to become a robot.";
-        speak[8] = "Pick a song and let’s boogie!";
+        speak[8] = "Click a Song Below to Make the Robot Dance";
         
 
     }
@@ -61,6 +61,8 @@ speak[0] = "Find out about some of our great parking options.";
         speak[6] = "Press the button on my screen and strike a pose!";
         speak[7] = "Say Cheese! You are about to become a robot.";
         speak[8] = "Pick a song and let’s boogie!";
+
+window.external.ChangeLanguage("en-us");
 function FC_ContentsCall(strContentsName, strLanguage)
 {
    // alert(strContentsName);
@@ -105,7 +107,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Contents/RobotAvatar/index.htm";
             break;
         case "Dance":
-            PlaySpeech(speak[9]);
+            PlaySpeech(speak[8]);
             location.href = "Contents/Dance/index.html";
             break;
         case "Config":

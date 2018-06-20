@@ -281,3 +281,14 @@ function getGetOrdinal(n) {
     return n+'<sup>'+(s[(v-20)%10]||s[v]||s[0])+'</sup>';
 }
 
+function OnJoystickControlled(strPara){
+    var btn_info = strPara.split(',')[4];
+
+
+    if(btn_info[0] == '1'){
+            window.external.ChangeLanguage("en-us");
+            SetVolume(1);
+            window.external.PlaySpeech("Hi Ricky, it’s Tracey.  Thanks for taking time out to see me in action in the Baggage Claim area.  I sure like it here – everybody is so friendly and professional. I can be a big help to all your guests at BWI.  For instance, I can give guests the information they need to find their car, public transportation, car services, lodging or local attractions.  If they’re visiting, I can tell them about the interesting and historical sites in the Baltimore area. And I’ll also remind them when they’re traveling again out of the Baltimore, Washington DC or Virginia area to make BWI their airport of choice. Sadly, I’m only here for the day, but I sure would like to work here full time. If you have any questions please contact Richard or Paul. I hope to see you and your staff real soon.  Bye.");
+          
+    }
+}

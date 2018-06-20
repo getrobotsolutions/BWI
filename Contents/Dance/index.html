@@ -175,6 +175,10 @@
 </body>
 
 <script type="application/javascript">
+
+  function JSUnload(){
+    window.external.RobotDanceStart(false);
+  }
     if(readCookie("CurrentLanguage") === "English")
     {
         LanguageChange('english');

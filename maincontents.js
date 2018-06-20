@@ -8,7 +8,7 @@ function LanguageChange(lang)
 {
     if(lang === "english")
     {
-        window.external.ChangeLanguage("en-gb");
+        window.external.ChangeLanguage("en-us");
         eraseCookie("CurrentLanguage");
         writeCookie("CurrentLanguage", "English", 30);
         document.getElementById("btn_english").style.backgroundColor = "#ffffff";

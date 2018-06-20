@@ -4,7 +4,7 @@ function OnJoystickControlled(strPara){
 
 	if(btn_info[0] == '1'){
 		/*if(readCookie("lang")=="english"){
-	        window.external.ChangeLanguage("en-gb");
+	        window.external.ChangeLanguage("en-us");
 	        SetVolume(1);
 	        window.external.PlaySpeech("bye, bye. Enjoy your flight.");
 	        //window.external.PlaySpeech("Hi, I’m Morriya, how can I help you?");

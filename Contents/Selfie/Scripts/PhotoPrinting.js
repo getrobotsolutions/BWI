@@ -112,7 +112,7 @@ function TakePhoto()
 {   
     window.external.SetVolume(1);
     if(readCookie("CurrentLanguage")=="English"){
-        window.external.ChangeLanguage("en-gb");
+        window.external.ChangeLanguage("en-us");
         PlaySpeech('Look at the camera on the top of the robots head');
     }
     else if(readCookie("CurrentLanguage")=="Spanish"){

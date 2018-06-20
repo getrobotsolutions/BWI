@@ -12,7 +12,8 @@ var MotionCount = 10;
 //Dance Play Part
 function DanceStart()
 {
-	switch(cnt)
+	window.external.RobotDanceStart(true);
+	/*switch(cnt)
 	{
 		case 1:	
 			Play01(); 
@@ -54,8 +55,9 @@ function DanceStart()
 		case 10: 
 			Play10(); 
 			break;
-	}
 
+	}
+*/
 
 	cnt++;
 	if(cnt == MotionCount)
@@ -148,6 +150,7 @@ function Play10()
 //Stop Playing Part
 function DanceStop()
 {
+	window.external.RobotDanceStart(false);
 	clearTimeout(playTimer);
 	StopWheel();
 	InitPose();
